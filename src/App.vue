@@ -7,6 +7,7 @@ const count = ref(0);
 const newProject = ref("");
 
 
+
 const increment = () => {
   count.value++;
 }
@@ -98,7 +99,7 @@ const addProject = () => {
 </li>
 </ul>
 
-<input v-model="newProject">
+<input v-model="newProject" />
 <p>{{ newProject }}</p>
 <button @click="addProject">
   Add Project
@@ -116,9 +117,4 @@ const addProject = () => {
 
 
   <UserList />
-
-
-  <p>
-    Remaining: {{ incompleteProjects.length }}
-  </p>
 </template>
